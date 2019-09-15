@@ -15,12 +15,16 @@ mix.js("src/js/app.js", "dist/js");
 
 mix.combine(
     [
-    ],
+        "src/vendor/typed/typed.min.js",
+        "src/vendor/swiper/js/swiper.min.js"
+
+],
     "dist/js/vendor.js"
 );
 
 mix.combine(
     [
+        "src/vendor/swiper/css/swiper.min.css",
         "src/vendor/dataTables/datatables.min.css",
         "src/vendor/font-awesome/css/font-awesome.min.css",
     ],
